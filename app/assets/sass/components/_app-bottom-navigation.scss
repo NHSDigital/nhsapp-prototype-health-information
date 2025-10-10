@@ -36,13 +36,13 @@
   text-decoration: none;
 
   .app-icon {
-    fill: $color_nhsuk-white;
+    fill: nhsuk-colour("white");
     height: 28px;
     width: 28px;
   }
 
   .nhsapp-icon {
-    fill: $color_nhsuk-white;
+    fill: nhsuk-colour("white");
     height: 28px;
     width: 28px;
   }
@@ -55,7 +55,7 @@
 }
 
 .app-bottom-navigation__label {
-  color: $color_nhsuk-white;
+  color: nhsuk-colour("white");
   font-size: 12px;
 
   @include nhsuk-media-query($from: tablet) {

@@ -5,7 +5,7 @@ $app-login-face-id-width: 156px;
 $app-login-face-id-height: 236px;
 
 .app-login-wrapper {
-  background-color: $color_nhsuk-blue;
+  background-color: nhsuk-colour("blue");
   color: white;
   height: 100vh;
 
