@@ -5,7 +5,7 @@
 .app-sticky-footer {
   @include nhsuk-responsive-padding(4);
 
-  background: $color_nhsuk-white;
+  background: nhsuk-colour("white");
   bottom: 80px;
   position: fixed;
   text-align: center;

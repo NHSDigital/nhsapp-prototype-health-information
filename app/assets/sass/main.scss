@@ -1,8 +1,8 @@
 // Import NHS.UK frontend library
-@import 'node_modules/nhsuk-frontend/packages/nhsuk';
+@import "nhsuk-frontend/dist/nhsuk";
 
 // Import all styles from the NHS App frontend library
-@import 'node_modules/nhsapp-frontend/dist/nhsapp/all';
+@import 'nhsapp-frontend/dist/nhsapp/all';
 
 // Components that are not in the NHS.UK frontend library
 @import 'components/list-border';
@@ -64,4 +64,8 @@
   @include nhsuk-media-query($from: desktop) {
     margin: 0 auto;
   }
+}
+
+.app-icon--tick {
+  fill: $nhsuk-success-colour;
 }
