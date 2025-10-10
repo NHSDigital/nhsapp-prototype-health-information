@@ -230,6 +230,18 @@ exampleTemplatesApp.get(/^([^.]+)$/, (req, res, next) => {
 
 app.use('/prototype-admin', prototypeAdminRoutes)
 
+// Clear all data in session if you open /examples/passing-data/clear-data
+app.post('/clear-data', (req, res) => {
+  req.session.data = {};
+  res.render('clear-data-success');
+});
+
+// Clear all data in session if you log out on /pages/account-and-settings-p9.html
+app.post('/pages/logged-out', (req, res) => {
+  req.session.data = {};
+  res.render('pages/logged-out');
+});
+
 // Redirect all POSTs to GETs - this allows users to use POST for autoStoreData
 app.post(/^\/([^.]+)$/, (req, res) => {
   res.redirect(
