@@ -36,35 +36,34 @@
 <!-- Header code examples can be found at https://service-manual.nhs.uk/design-system/components/header -->
 {% block header %}
   {{ header({
-    "service": {
-        "name": "App prototype",
-        "href": "/"
-      },
-      "showNav": "false",
-      "showSearch": "false"
-    })
-  }}
+    service: {
+      text: 'App prototype <span class="nhsuk-u-visually-hidden"> homepage</span>' | safe,
+      href: "/"
+    }
+  }) }}
 {% endblock %}
 
 <!-- Edit the footer -->
 <!-- Footer code examples can be found at https://service-manual.nhs.uk/design-system/components/footer -->
 {% block footer %}
   {{ footer({
-    "links": [
-      {
-        "URL": "/",
-        "label": "Home"
-      },
-      {
-        "URL": "https://github.com/nhsuk/nhs-app-redesign-prototype",
-        "label": "GitHub repo"
-      },
-      {
-        "URL": "/clear-data",
-        "label": "Clear data"
-      }
-    ]
-  })}}
+    meta: {
+      items: [
+        {
+          href: "/",
+          text: "Home"
+        },
+        {
+          href: "https://github.com/nhsuk/nhs-app-redesign-prototype",
+          text: "GitHub repo"
+        },
+        {
+          href: "/clear-data",
+          text: "Clear data"
+        }
+      ]
+    }
+  }) }}
 {% endblock %}
 
 {% block bodyEnd %}
