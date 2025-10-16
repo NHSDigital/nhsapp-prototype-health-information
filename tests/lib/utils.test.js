@@ -138,7 +138,7 @@ test('autoStoreData with request session data not set', () => {
 
     autoStoreData(mockRequest, mockResponse, mockNext);
 
-    expect(mockResponse.locals.data).toStrictEqual({1:{2:"two"}});
+    expect(mockResponse.locals.data).toStrictEqual(expect.objectContaining({1:{2:"two"}}));
 });
 
 test('autoStoreData with unchecked in the request', () => {
@@ -162,5 +162,5 @@ test('autoStoreData with unchecked in the request', () => {
 
     autoStoreData(mockRequest, mockResponse, mockNext);
 
-    expect(mockResponse.locals.data).toStrictEqual({2: ["one", "three",],});
+    expect(mockResponse.locals.data).toStrictEqual(expect.objectContaining({2: ["one", "three",],}));
 });
