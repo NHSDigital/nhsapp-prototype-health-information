@@ -1,5 +1,5 @@
 {
-  "name": "nhsuk-prototype-kit",
+  "name": "nhsuk-prototype-health-information",
   "version": "7.0.1",
   "description": "Rapidly create HTML prototypes of NHS websites and services.",
   "main": "app.js",
